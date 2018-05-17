@@ -1,14 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Login } from '../shared/Login';
+import {Link} from 'react-router-dom';
+import {Login} from '../shared/Login';
 
 export const Signup = () => {
-        return (
-            <main className="Signup">
+    return (
+        <main className="Signup">
+            <section className="inner">
                 <Login social="Aanmelden met Facebook" link="/signup-steps">
-                <Link to="/signup-steps" className="Form-button">Aan de slag</Link>
+                    <h1>Aanmelden</h1>
+                    <Link to="/signup-steps" className="Form-button">Aan de slag</Link>
                 </Login>
                 <p>Al een account? <Link to="/signin">Inloggen</Link></p>
-            </main>
-        );
+            </section>
+        </main>
+    );
 };

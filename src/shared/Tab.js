@@ -16,7 +16,8 @@ const styles = {
     tab: {
         color: '#000',
         fontFamily: 'Montserrat, sans-serif',
-        fontWeight: 400
+        fontWeight: 400,
+        textTransform: "none"
     }
 };
 
@@ -43,7 +44,7 @@ export class TabView extends Component {
                         onChange={this.handleChange}
                         value={this.state.slideIndex}
                         className="tabs"
-                        inkBarStyle={{backgroundColor: "#536DFE"}}
+                        inkBarStyle={{backgroundColor: "#44A1D5"}}
                         tabItemContainerStyle={{backgroundColor: "transparent"}}
                     >
                         <Tab label="Dag" value={0} buttonStyle={styles.tab}/>
@@ -57,16 +58,16 @@ export class TabView extends Component {
                         onChangeIndex={this.handleChange}
                     >
                         <div className="swipe-view">
-                            <img src={require("../images/day.png")} alt="graph"/>
+                            <img src={require("../images/day.svg")} alt="graph"/>
                         </div>
                         <div className="swipe-view">
-                            <img src={require("../images/month.png")} alt="graph"/>
+                            <img src={require("../images/week-graph.svg")} alt="graph"/>
                         </div>
                         <div className="swipe-view">
-                            <img src={require("../images/week-graph.png")} alt="graph"/>
+                            <img src={require("../images/month.svg")} alt="graph"/>
                         </div>
                         <div className="swipe-view">
-                            <img src={require("../images/year.png")} alt="graph"/>
+                            <img src={require("../images/year.svg")} alt="graph"/>
                         </div>
                     </SwipeableViews>
                 </div>

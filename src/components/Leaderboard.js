@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import {HeaderMain} from "../shared/HeaderMain";
-import {Settings} from "./Settings";
 
 let fotoOne = require("../images/profilebig.png");
 let fotoTwo = require("../images/tobiasbig.png");
@@ -26,8 +25,8 @@ export class Leaderboard extends Component {
     render() {
         return (
             <div>
-                <HeaderMain title="ranglijst">
-                    <Link to="#" onClick={() => this.onChangeSettings()} className="settings link">Settings</Link>
+                <HeaderMain title="Ranglijst">
+                    <Link to="/settings" className="settings link">Settings</Link>
                 </HeaderMain>
                 <main>
                     <section className="Profile-section background dark-theme">
@@ -98,7 +97,6 @@ export class Leaderboard extends Component {
                         </ul>
                     </section>
                 </main>
-                <Settings onBackPress={() => this.onChangeSettings()} open={this.state.settingsOpen}/>
             </div>
         );
     }

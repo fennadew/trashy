@@ -34,7 +34,11 @@ export class FormStepThree extends Component {
     render() {
         return (
             <form>
-                <SortableList items={this.state.items} onSortEnd={this.onSortEnd} />
+                <fieldset>
+                    <legend><span>Stap 3/4</span> Taken rangschikken</legend>
+                    <label>Rangschik de huishoudelijke taken</label>
+                    <SortableList items={this.state.items} onSortEnd={this.onSortEnd} />
+                </fieldset>
             </form>
         );
     }

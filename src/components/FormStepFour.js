@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import DropdownList from 'react-widgets/lib/DropdownList';
-let weeks = [ 1, 2, 3, 4 ];
+
+let weeks = ["Elke week", "Elke 2 weken", "Elke 3 weken", "Elke maand"];
 
 export class FormStepFour extends Component {
     constructor(props) {
@@ -8,31 +9,30 @@ export class FormStepFour extends Component {
         this.state = {
             items: this.props.tasks,
             value: "",
-            weeks: "weken"
         }
     }
 
     handleFrequencyChange(value) {
-        if (value === 1) {
-            this.setState({weeks: "week"});
-        } else {
-            this.setState({weeks: "weken"});
-        }
         this.setState({value});
+        this.props.onChangeFrequency(value);
     }
 
     render() {
         return (
             <form>
-                <div className="input-container">
-                    <span className={"Placeholder " + (this.state.value.length === 0 ? "disabled" : "")}>Om de</span>
-                    <span className={"Placeholder left " + (this.state.value.length === 0 ? "disabled" : "")}>{this.state.weeks}</span>
-                    <DropdownList className="Dropdown middle"
-                                  data={weeks}
-                                  value={this.state.value}
-                                  onChange={(value) => this.handleFrequencyChange( value )}
-                    />
-                </div>
+                <fieldset>
+                    <legend><span>Stap 4/4</span> Wedstrijd periode</legend>
+                    <label>Duur</label>
+                    <div className="input-container">
+                        <span
+                            className={"Placeholder " + (this.state.value.length === 0 ? "disabled" : "hidden")}>Selecteer duur wedstrijd</span>
+                        <DropdownList className={"Dropdown " + ((this.state.value.length === 0 && this.props.validation) ? "error" : "")}
+                                      data={weeks}
+                                      value={this.state.value}
+                                      onChange={(value) => this.handleFrequencyChange(value)}
+                        />
+                    </div>
+                </fieldset>
             </form>
         );
     }

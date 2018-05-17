@@ -12,7 +12,7 @@ export class Start extends Component {
             <main className="Start">
                     <h1 className="Start-title">Track 'n Trash</h1>
                     <div>
-                        <Link to={`${process.env.PUBLIC_URL}/guide`} className="Start-button">Start</Link>
+                        <Link to="/guide" className="Start-button">Start</Link>
                     </div>
             </main>
         );

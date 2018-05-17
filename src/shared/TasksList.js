@@ -29,7 +29,7 @@ let people = [
         checked: Math.random() <= 0.35 ? disabledInput : disabledInputChecked,
     },
     {
-        name: "Tobias",
+        name: "Yorick",
         img: require("../images/profilesmall3.png"),
         checked: Math.random() <= 0.35 ? disabledInput : disabledInputChecked,
     },

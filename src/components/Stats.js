@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Header} from "../shared/Header";
 import { TabView } from '../shared/Tab'
+import {HeaderMain} from "../shared/HeaderMain";
+import { Link } from 'react-router-dom';
 
 export class Stats extends Component {
     constructor(props) {
@@ -10,10 +11,19 @@ export class Stats extends Component {
         };
     }
 
+    onChangeSettings() {
+        let newSetting = !this.state.settingsOpen;
+        this.setState({
+            settingsOpen: newSetting
+        });
+    }
+
     render() {
         return (
             <div>
-                <Header title="Statistieken" main={true}/>
+                <HeaderMain title="Statistieken">
+                    <Link to="/settings" className="settings link">Settings</Link>
+                </HeaderMain>
                 <main>
                     <section className="Profile-section dark-theme side">
                         <img src={require("../images/profilebig.png")} alt="Profile"/>

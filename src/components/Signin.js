@@ -5,10 +5,13 @@ import {Login} from '../shared/Login';
 export const Signin = () => {
     return (
         <main className="Signup">
-            <Login social="Inloggen met Facebook" link="/leaderboard">
+            <section className="inner">
+            <Login social="Inloggen met Facebook" link="/home">
+                <h1>Inloggen</h1>
                 <Link to="/home" className="Form-button">Inloggen</Link>
             </Login>
-            <p>Nog geen account? <Link to="/signup">Aanmelden</Link></p>
+                <p>Nog geen account? <Link to="/signup">Aanmelden</Link></p>
+            </section>
         </main>
     );
 };

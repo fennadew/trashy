@@ -6,9 +6,8 @@ export const Settings = (props) => {
     return (
         <div className={"Settings" + (props.open ? " open" : "")}>
             <Header title="Instellingen" main={true}>
-                <Link to="#" onClick={props.onBackPress} className="back link">Back</Link>
+                <Link to="/home" onClick={props.onBackPress} className="back link">Back</Link>
             </Header>
-            <div className="dark-theme"></div>
             <section className="Setting-container">
                 <ul>
                     <li>Mijn account</li>

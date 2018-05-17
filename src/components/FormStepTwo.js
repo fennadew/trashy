@@ -39,16 +39,20 @@ export class FormStepTwo extends Component {
         let tasks = this.state.tasks;
         const amountPeople = tasks.map((el, i) => {
             return <div key={"input" + i} className={"input-container " + ( el.length > 0 ? "checked" : "")}>
-                <span className={"Placeholder "+ (el.length === 0 ? "disabled" : "")}>{i + 1}.</span>
+                <span className={"Placeholder "+ (el.length === 0 ? "disabled" : "hidden")}>Taak {i + 1}</span>
                 <input type="text"
-                       className="Number-input"
+                       className={"Number-input "+ ((i === 0 && tasks[0].length === 0 && this.props.validation) ? "error" : "")}
                        value = {el}
                        onChange={(el) => this.handleTasksChange(el, i)}/>
             </div>
         });
         return (
             <form>
-                {amountPeople}
+                <fieldset>
+                    <legend><span>Stap 2/4</span> Taken toevoegen</legend>
+                    <label>Huishoudelijke taken</label>
+                    {amountPeople}
+                </fieldset>
             </form>
         );
     }

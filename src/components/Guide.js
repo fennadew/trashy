@@ -9,37 +9,37 @@ const guidePages = [
         title: "Aanmelden",
         text: "Maak een account aan met je e-mail of via facebook",
         src: require("../images/signup.svg"),
-        color: '#536DFE'
+        color: '#85BBDA'
     },
     {
         title: "Groep aanmaken",
         text: "Maak een groep aan voor jou en je huisgenoten of sluit je aan bij een groep",
         src: require("../images/group.svg"),
-        color: '#50E3C2'
+        color: '#EFC3BC'
     },
     {
         title: "Taken toevoegen",
         text: "Voeg de taken toe die gedaan moeten worden in jouw studentenhuis",
         src: require("../images/tasks.svg"),
-        color: '#EB3069'
+        color: '#CAE8BC'
     },
     {
         title: "Taken rangschikken",
         text: "Breng jouw stem uit over welke taken jij het vervelendst vindt",
         src: require("../images/tasks2.svg"),
-        color: '#1F8FFF'
+        color: '#B6D8EC'
     },
     {
         title: "Plannen",
         text: "Bepaal hoevaak de taken gedaan moeten worden",
         src: require("../images/tasks3.svg"),
-        color: '#00DECA'
+        color: '#EFC3BC'
     },
     {
         title: "Versla je huisgenoten",
         text: "Trashy houdt bij wie het meest op zijn telefoon zit. Heb jij het meeste op je telefoon gezeten, dan doe jij de vervelenste taak!",
         src: require("../images/trofee.svg"),
-        color: '#F95C2F'
+        color: '#CAE8BC'
     },
 ];
 

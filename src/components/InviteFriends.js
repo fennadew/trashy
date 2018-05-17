@@ -14,17 +14,19 @@ export class InviteFriends extends Component {
             <div>
                 <Header title="Huisgenoten uitnodigen"/>
                 <main className="Signup-container">
-                    <p>Nodig je huisgenoten uit voor <span className="GroupName">{this.props.location.state.name}</span></p>
+                    <section className="inner-signup">
+                    <p className="p-big">Nodig je huisgenoten uit voor <span className="GroupName">{this.props.location.state.name}</span></p>
                     <div className="Invite full">track.trash/sjwuhe2</div>
                     <div className="Invite-container">
                         <div className="Invite">Whatsapp</div>
                         <div className="Invite">Copy</div>
                         <div className="Invite">Messenger</div>
                     </div>
+                        <footer className="Invite-footer">
+                            <Link to="/home" className="Form-button">Begin</Link>
+                        </footer>
+                    </section>
                 </main>
-                <footer className="Invite-footer">
-                    <Link to="/home" className="Form-button">Begin</Link>
-                </footer>
             </div>
         );
     }

@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import {Header} from "../shared/Header";
+import {HeaderMain} from "../shared/HeaderMain";
 import {TasksList} from "../shared/TasksList";
 import {Tabs, Tab} from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { Link } from 'react-router-dom';
 
-const dates = ['49', '50', '51', '51', '52', '01', '02', '03'];
+const dates = ['48', '49', '50', '51', '52', '01', '02', '03'];
 const length = dates.length - 1;
 
 const styles = {
@@ -16,7 +17,7 @@ const styles = {
         fontWeight: 400,
     },
     tab: {
-        color: '#FFF',
+        color: '#000',
         fontFamily: 'Montserrat, sans-serif',
         fontWeight: 400,
         width: "36px",
@@ -27,11 +28,11 @@ const styles = {
         transition: "all ease 300ms",
     },
     active: {
-        color: "#536DFE",
-        backgroundColor: "#FFF"
+        color: "#FFF",
+        backgroundColor: "#44A1D5"
     },
     today: {
-        border: "1px solid #FFF"
+        border: "1px solid #44A1D5"
     },
     circle: {
         display: "none"
@@ -64,7 +65,9 @@ export class Tasks extends Component {
         return (
             <MuiThemeProvider>
                 <div>
-                    <Header title="Taken overzicht" main={true}/>
+                    <HeaderMain title="Taken overzicht">
+                        <Link to="/settings" className="settings link">Settings</Link>
+                    </HeaderMain>
                     <main>
                         <section className="Calender-section dark-theme">
                             <h2>Week {weekDay}</h2>
@@ -81,7 +84,8 @@ export class Tasks extends Component {
                                     {currentdates}
                                 </Tabs>
                             </nav>
-                            <section>
+                        </section>
+                        <section>
                             <SwipeableViews
                                 index={this.state.slideIndex}
                                 onChangeIndex={this.handleChange}
@@ -96,7 +100,6 @@ export class Tasks extends Component {
                                 <TasksList/>
                                 <TasksList/>
                             </SwipeableViews>
-                            </section>
                         </section>
                     </main>
                 </div>

@@ -12,7 +12,7 @@ export class Profile extends Component {
         return (
             <div>
                 <HeaderMain title="Statistieken">
-                    <Link to="/home" className="link cross">X</Link>
+                    <Link to="/home" className="back link">Back</Link>
                 </HeaderMain>
                 <main>
                     <section className="Profile-section dark-theme side">
