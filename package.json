@@ -2,7 +2,7 @@
   "name": "trashy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fhttps://fennadew.github.io/trashy/",
+  "homepage": "https://fennadew.github.io/trashy/",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "jest-cli": "^22.1.2",
