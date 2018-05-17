@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="14px" viewBox="0 0 9 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="iPhone-7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-333.000000, -85.000000)">
+        <path d="M340.910514,97.3385796 C341.294792,97.7081328 341.306861,98.3193076 340.937308,98.7038264 C340.747824,98.9007927 340.494616,99 340.241167,99 C340.000269,99 339.759372,98.9106893 339.572061,98.7306196 L333.296174,92.6961127 C333.106931,92.514112 333,92.2625938 333,91.999972 C333,91.7375917 333.106931,91.4860734 333.296174,91.3040727 L339.572061,85.2695658 C339.956338,84.9000126 340.567754,84.9118402 340.937308,85.296359 C341.306861,85.6808778 341.294792,86.2920527 340.910514,86.6616059 L335.358527,91.999972 L340.910514,97.3385796 Z" id="chevron-left" fill="#4A4A4A" transform="translate(337.103393, 92.000000) scale(-1, 1) translate(-337.103393, -92.000000) "></path>
+    </g>
+</svg>

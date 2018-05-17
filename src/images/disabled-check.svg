@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 272 + Fill 273</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="A4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-249.000000, -341.000000)">
+        <g id="Fill-272-+-Fill-273" transform="translate(249.000000, 339.000000)">
+            <path d="M16,18.0005 L2,18.0005 C0.897,18.0005 0,17.1035 0,16.0005 L0,4.0005 C0,2.8985 0.897,2.0005 2,2.0005 L12,2.0005 L12,4.0005 L2,4.0005 L2,16.0005 L16,16.0005 L16,11.0005 L18,11.0005 L18,16.0005 C18,17.1035 17.103,18.0005 16,18.0005" id="Fill-272" fill="#4A4A4A"></path>
+            <path d="M16,18.0005 L2,18.0005 C0.897,18.0005 0,17.1035 0,16.0005 L0,4.0005 C0,2.8985 0.897,2.0005 2,2.0005 L12,2.0005 L12,4.0005 L2,4.0005 L2,16.0005 L16,16.0005 L16,11.0005 L18,11.0005 L18,16.0005 C18,17.1035 17.103,18.0005 16,18.0005" id="Fill-272" fill="#4A4A4A" transform="translate(9.000000, 10.000500) rotate(-180.000000) translate(-9.000000, -10.000500) "></path>
+            <path d="M16,18 L2,18 C0.897,18 0,17.103 0,16 L0,4 C0,2.898 0.897,2 2,2 L12,2 L12,4 L2,4 L2,16 L16,16 L16,11 L18,11 L18,16 C18,17.103 17.103,18 16,18" id="Fill-272" fill="#B1B1B1"></path>
+            <path d="M16,18 L2,18 C0.897,18 0,17.103 0,16 L0,4 C0,2.898 0.897,2 2,2 L12,2 L12,4 L2,4 L2,16 L16,16 L16,11 L18,11 L18,16 C18,17.103 17.103,18 16,18" id="Fill-272" fill="#B1B1B1" transform="translate(9.000000, 10.000000) rotate(-180.000000) translate(-9.000000, -10.000000) "></path>
+            <polygon id="Fill-273" points="8.98652666 14 4 8.94806241 5.78936049 7.13486191 8.89948763 10.2864259 18.1276488 0 20 1.72397627"></polygon>
+        </g>
+    </g>
+</svg>

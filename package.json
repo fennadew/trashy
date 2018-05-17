@@ -1,0 +1,30 @@
+{
+  "name": "trashy",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://fhttps://fennadew.github.io/trashy/",
+  "dependencies": {
+    "gh-pages": "^1.1.0",
+    "jest-cli": "^22.1.2",
+    "material-ui": "^0.20.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-dom-animated": "^1.0.5",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-transition": "^1.1.3",
+    "react-scripts": "1.0.17",
+    "react-sortable-hoc": "^0.6.8",
+    "react-swipeable-views": "^0.12.12",
+    "react-tabs": "^2.2.1",
+    "react-transition-group": "^2.2.1",
+    "react-widgets": "^4.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  }
+}
